@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cliptitle",
-    version="0.1.2",
+    version="1.0.2",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -25,11 +25,11 @@ setup(
     description="A clipboard monitor that adds titles to copied URLs",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/cyysky/cliptitle",
+    url="https://github.com/cyysky/cliptitle-enhancer",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        "Operating System :: Microsoft :: Windows",
     ],
     python_requires='>=3.6',
 )
