@@ -87,12 +87,12 @@ class ClipTitleEnhancer:
         # If icon is not found, use a fallback method
         if not os.path.exists(icon_path):
             try:
-                icon_path = pkg_resources.resource_filename('clipboard_monitor', 'icon.ico')
+                icon_path = pkg_resources.resource_filename('cliptitle', 'icon.ico')
             except Exception as e:
                 print(f"Error loading icon: {e}")
                 icon_path = None  # SysTrayIcon can handle None for the icon
 
-        self.systray = SysTrayIcon(icon_path, "Clipboard Monitor (Monitoring)", menu_options, on_quit=self.on_quit_callback)
+        self.systray = SysTrayIcon(icon_path, "Cliptitle Enhancer (Monitoring)", menu_options, on_quit=self.on_quit_callback)
         self.systray.start()
         
         clipboard_thread = threading.Thread(target=self.monitor_clipboard, daemon=True)

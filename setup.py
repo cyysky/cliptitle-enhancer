@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cliptitle",
-    version="1.0.2",
+    version="1.0.3",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -13,7 +13,7 @@ setup(
         "infi.systray"
     ],
     entry_points={
-        "console_scripts": [
+        "gui_scripts": [
             "cliptitle=cliptitle.clip_title_enhancer:main",
         ],
     },
